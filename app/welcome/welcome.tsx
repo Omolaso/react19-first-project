@@ -13,7 +13,6 @@ export function Welcome() {
 
     const filteredNewUsers = newUsers.filter(
       (item) => item.toLowerCase() === value.toLowerCase()
-      // item.toLowerCase().includes(value.toLowerCase())
     );
 
     setFiltered(filteredNewUsers);
