@@ -11,8 +11,8 @@ export function Welcome() {
     const value = e.target.value;
     setInputValue(value);
 
-    const filteredNewUsers = newUsers.filter(
-      (item) => item.toLowerCase() === value.toLowerCase()
+    const filteredNewUsers = newUsers.filter((item) =>
+      item.toLowerCase().includes(value.toLowerCase())
     );
 
     setFiltered(filteredNewUsers);
