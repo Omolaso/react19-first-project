@@ -27,10 +27,10 @@ export function Welcome() {
           onChange={(e) => handleFilter(e)}
           className="bg-white text-black p-2"
         />
-
+{item.name}
         <ul>
           {filtered.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>{item.name}</li>
           ))}
         </ul>
       </div>
